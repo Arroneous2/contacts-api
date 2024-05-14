@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+p "And so it beings"
+def save_random_contact()
+  contact = Contact.new(first_name: "Mojo", last_name: "Jojo", email: "monkey@something.com", phone_number: "123-5678-9011")
+   contact.save
+end
+
+require "faker"
+
+p Faker::Name.name 
+
